@@ -232,7 +232,7 @@ suite('Functional Tests', function() {
 
       /** Now it's your turn. Please don't use the keyword #example in the title. **/
       
-      test('submit "surname" : "Colombo" - write your e2e test...', function(done) {
+      test('submit "surname" : "Colombo" - test Colombo', function(done) {
 
         // fill the form...
         // then submit it pressing 'submit' button.
@@ -269,7 +269,7 @@ suite('Functional Tests', function() {
       });
       
       /** Try it again... No help this time **/
-      test('submit "surname" : "Vespucci" - write your e2e test...', function(done) {
+      test('submit "surname" : "Vespucci" - Vespucci', function(done) {
 
         // fill the form, and submit.
         // assert that status is OK 200
