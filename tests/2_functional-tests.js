@@ -150,7 +150,7 @@ suite('Functional Tests', function() {
 
           done();
         })
-        
+
       });
     });
 
@@ -258,7 +258,10 @@ suite('Functional Tests', function() {
 
             // assert that the element(s) 'span#dates' exist and their count is 1
             
-            assert.fail();
+            browser.assert.success();
+            browser.assert.text('span#name', 'Cristoforo');
+            browser.assert.text('span#surname', 'Colombo');
+            browser.assert.element('span#dates', 1);
             
             done();   // It's an async test, so we have to call 'done()''
           });
@@ -273,7 +276,12 @@ suite('Functional Tests', function() {
         // assert that the text inside the element 'span#name' is 'Amerigo'
         // assert that the text inside the element 'span#surname' is 'Vespucci'
         // assert that the element(s) 'span#dates' exist and their count is 1
-        assert.fail();
+        browser.assert.success();
+        browser.assert.text('span#name', 'Amerigo');
+        browser.assert.text('span#surname', 'Vespucci');
+        browser.assert.element('span#dates', 1);
+
+
         done();
       
       });
